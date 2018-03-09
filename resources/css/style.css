@@ -1,0 +1,69 @@
+/*Colmar Academy is a tutorial webpage
+describing a landing page for a
+technical school, built to specifications
+provided by Codecademy per the
+Web Programming course*/
+
+/*universal styling*/
+
+.container {
+  display:flex;
+}
+
+.item-1 {
+  width:60%;
+  height:100%;
+}
+
+.item-2, .item-3, .item-4 {
+  width:40%;
+}
+
+.image-container {
+  overflow:hidden;
+}
+
+.color-1 {
+  background-color:white;
+  color:black;
+}
+
+/*header styling*/
+header {
+  position:fixed;
+  width:100%;
+}
+
+header .container {
+  display:inline-flex;
+  overflow:auto;
+  height:64px;
+  width:100%;
+  padding:0 24px;
+  align-items:center;
+}
+
+.logo {
+  float:left;
+}
+
+.logo .image-container {
+  height:32px;
+  width:auto;
+}
+
+.pc-menu {
+  display:inline-block;
+  float:right;
+}
+
+
+.pc-menu ul {
+  display:flex;
+  list-style-type:none;
+
+}
+
+.pc-menu ul li {
+  margin-right:16px;
+}
