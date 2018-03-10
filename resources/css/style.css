@@ -8,6 +8,7 @@ Web Programming course*/
 
 .container {
   display:flex;
+  max-width:960px;
 }
 
 .item-1 {
@@ -23,15 +24,37 @@ Web Programming course*/
   overflow:hidden;
 }
 
-.color-1 {
-  background-color:white;
-  color:black;
+.image-container img {
+  max-width:100%;
+  height:auto;
 }
 
+.color-1 {
+  background-color:#EDF3F9;
+  color:#0D1433;
+}
+
+.color-2 {
+  background-color:#D7E0CA;
+  color:#1C280A;
+}
+
+.color-3 {
+  background-color:#8E2F3A;
+  color:#FFE4DB;
+}
+
+.spacer {
+  flex-grow:1;
+}
 /*header styling*/
 header {
   position:fixed;
   width:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 header .container {
@@ -41,6 +64,10 @@ header .container {
   width:100%;
   padding:0 24px;
   align-items:center;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 .logo {
@@ -66,4 +93,70 @@ header .container {
 
 .pc-menu ul li {
   margin-right:16px;
+}
+
+/*feature styling*/
+.feature {
+  padding-top:88px;
+
+}
+
+.feature .image-container {
+  width:60%;
+  padding:32px 24px;
+}
+
+.feature-content {
+  flex-direction:column;
+  width:40%;
+}
+
+.feature .button {
+  padding:8px 0px;
+  text-align:center;
+  width:11rem;
+  align-self:flex-start;
+}
+
+/*news styling*/
+
+.news {
+  flex-wrap:wrap;
+  flex-direction:column;
+  max-height:35rem;
+
+}
+
+.news .item-1, .news .item-2, .news .item-3, .news .item-4 {
+  transition: color 140ms ease-in 70ms,
+  background-color 140ms ease-in 70ms;
+}
+
+.news .item-1:hover, .news .item-2:hover, .news .item-3:hover, .news .item-4:hover {
+
+  background-color:#D7E0CA;
+  color:#1C280A;
+}
+
+.news .item-1 {
+  height:30rem;
+}
+
+.news .item-2, .news .item-3, .news .item-4 {
+  height:9rem;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+}
+
+.preview-pic {
+  width:35%;
+  height:auto;
+  justify-content:center;
+  margin:auto;
+  padding-right:1rem;
+}
+
+.news-item {
+  flex-direction:column;
 }
