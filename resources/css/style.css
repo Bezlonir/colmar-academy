@@ -8,7 +8,9 @@ Web Programming course*/
 
 .container {
   display:flex;
-  max-width:960px;
+  max-width:100%;
+  overflow:hidden;
+
 }
 
 .item-1 {
@@ -47,6 +49,11 @@ Web Programming course*/
 .spacer {
   flex-grow:1;
 }
+
+body {
+  margin:0;
+}
+
 /*header styling*/
 header {
   position:fixed;
@@ -82,6 +89,7 @@ header .container {
 .pc-menu {
   display:inline-block;
   float:right;
+  padding-right:1.5rem;
 }
 
 
@@ -97,17 +105,21 @@ header .container {
 
 /*feature styling*/
 .feature {
+  margin:0;
   padding-top:88px;
-
+  width:100%;
 }
 
 .feature .image-container {
   width:60%;
+  height:auto;
   padding:32px 24px;
 }
 
 .feature-content {
   flex-direction:column;
+  justify-content:flex-start;
+  padding: 10% 8%;
   width:40%;
 }
 
@@ -123,30 +135,44 @@ header .container {
 .news {
   flex-wrap:wrap;
   flex-direction:column;
-  max-height:35rem;
-
+  max-height:37rem;
+  padding:0.5rem;
 }
 
-.news .item-1, .news .item-2, .news .item-3, .news .item-4 {
+.news-item {
   transition: color 140ms ease-in 70ms,
   background-color 140ms ease-in 70ms;
 }
 
-.news .item-1:hover, .news .item-2:hover, .news .item-3:hover, .news .item-4:hover {
+.news-item .item-1:hover {
 
   background-color:#D7E0CA;
   color:#1C280A;
 }
 
+
 .news .item-1 {
-  height:30rem;
+  height:29.5rem;
+  border-right: 2px inset rgba(186,204,108,.4);
+  padding-right: 1.5rem;
+}
+
+
+.item-1 .copy, .item-1 .byline {
+  padding-top: 0.5rem;
 }
 
 .news .item-2, .news .item-3, .news .item-4 {
-  height:9rem;
+  font-size: 0.8rem;
+  height:7rem;
+  margin-left:24px;
   flex-direction:column;
   flex-wrap:wrap;
-  justify-content:flex-start;
+  justify-content:space-around;
+  padding-bottom:0.5rem;
+  border-bottom: 2px solid rgba(186,204,108,.4);
+  border-collapse:separate;
+
 }
 
 .preview-pic {
@@ -154,9 +180,20 @@ header .container {
   height:auto;
   justify-content:center;
   margin:auto;
-  padding-right:1rem;
+  padding:0.5rem;
 }
 
 .news-item {
   flex-direction:column;
+}
+
+.item-2 .copy, .item-3 .copy, .item-4 .copy {
+  max-width:65%;
+
+}
+
+.archive {
+  align-self:center;
+  text-align:center;
+  padding-top:0.5rem;
 }
