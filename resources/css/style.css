@@ -27,7 +27,16 @@ Web Programming course*/
 }
 
 .image-container img {
-  max-width:100%;
+  width:100%;
+  height:auto;
+}
+
+.video-container {
+  overflow:hidden;
+}
+
+.video-continer video {
+  width:100%;
   height:auto;
 }
 
@@ -105,9 +114,10 @@ header .container {
 
 /*feature styling*/
 .feature {
-  margin:0;
   padding-top:88px;
-  width:100%;
+  margin:0;
+  align-items:center;
+
 }
 
 .feature .image-container {
@@ -137,6 +147,7 @@ header .container {
   flex-direction:column;
   max-height:37rem;
   padding:0.5rem;
+
 }
 
 .news-item {
@@ -144,7 +155,8 @@ header .container {
   background-color 140ms ease-in 70ms;
 }
 
-.news-item .item-1:hover {
+
+.news-item:hover {
 
   background-color:#D7E0CA;
   color:#1C280A;
@@ -153,7 +165,7 @@ header .container {
 
 .news .item-1 {
   height:29.5rem;
-  border-right: 2px inset rgba(186,204,108,.4);
+  border-right: 2px solid rgba(186,204,108,.4);
   padding-right: 1.5rem;
 }
 
@@ -161,6 +173,17 @@ header .container {
 .item-1 .copy, .item-1 .byline {
   padding-top: 0.5rem;
 }
+
+.copy {
+  flex-grow:1;
+  width: inherit;
+  overflow:wrap;
+}
+
+.title, .byline {
+  flex-shrink:1;
+}
+
 
 .news .item-2, .news .item-3, .news .item-4 {
   font-size: 0.8rem;
@@ -179,8 +202,9 @@ header .container {
   width:35%;
   height:auto;
   justify-content:center;
-  margin:auto;
+
   padding:0.5rem;
+
 }
 
 .news-item {
@@ -196,4 +220,62 @@ header .container {
   align-self:center;
   text-align:center;
   padding-top:0.5rem;
+}
+
+/*degree fields section*/
+
+.degree-field-list {
+    flex-direction:column;
+    justify-content:center;
+}
+
+.degree-fields {
+  flex-wrap:wrap;
+  margin:32px 72px;
+}
+
+.degree-field-list h2 {
+  width:100%;
+  text-align:center;
+
+  margin-top:32px;
+}
+
+.degree-program {
+  flex-direction:column;
+  width:25%;
+  margin:32px;
+}
+
+.degree-text {
+  margin-left:16px;
+  margin-top:16px;
+  margin-bottom:24px;
+}
+
+.degree-text p, .degree-text span {
+  margin-top:8px;
+}
+
+.degree-program h4 {
+  font-style:bold;
+}
+
+
+/*Thesis exhibit section*/
+.exhibition {
+  flex-wrap:wrap;
+}
+
+.exhibition h2 {
+  width:100%;
+}
+
+.exhibition .item-1 {
+  height:100%;
+}
+
+.thesis-img {
+  width:35%;
+  height:auto;
 }
