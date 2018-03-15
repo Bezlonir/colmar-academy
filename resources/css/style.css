@@ -193,6 +193,7 @@ header .container {
   width:calc(60% - 24px);
   border-right: 2px solid rgba(186,204,108,.4);
   padding-right: 1.5rem;
+  flex-direction:column;
 }
 
 
@@ -210,7 +211,7 @@ header .container {
 
 .copy {
   flex-grow:1;
-  width: inherit;
+  max-width: 100%;
   overflow:wrap;
 }
 
@@ -222,11 +223,11 @@ header .container {
 .news .item-2, .news .item-3, .news .item-4 {
   font-size: 0.8rem;
   height:7rem;
-  margin-left:24px;
-  flex-direction:column;
-  flex-wrap:wrap;
 
-  justify-content:space-around;
+  /*flex-direction:column;*/
+  /*flex-wrap:wrap;*/
+
+  /*justify-content:space-around;*/
 
   padding-bottom:0.5rem;
   border-bottom: 2px solid rgba(186,204,108,.4);
@@ -247,21 +248,23 @@ header .container {
   max-width:100%;
 }
 
-.news-item {
+/*.news .item-1 {
   flex-direction:column;
-}
-
+}*/
+/*
 .item-2 .copy, .item-3 .copy, .item-4 .copy {
-  max-width:65%;
+  width:inherit;
 
-}
+}*/
 
 .news .col {
-  max-width:calc(40% - 24px);
+  width:calc(40% - 48px);
+  margin-left:24px;
 }
 
-.news-item .col {
-  max-width:60%;
+.news-item .col2 {
+  width:60%;
+  flex-direction:column;
 }
 
 .archive {
@@ -313,6 +316,7 @@ header .container {
 /*Thesis exhibit section*/
 .exhibition {
   flex-wrap:wrap;
+  padding-bottom:32px;
 }
 
 .exhibition .col {
@@ -327,8 +331,13 @@ header .container {
 
 }
 
-.exhibit {
+.ex-text h4, .ex-text span {
+  margin:0;
+  margin-bottom:8px;
+}
 
+.exhibit .col {
+  justify-content:center;
 }
 
 .exhibition .item-1 {
@@ -345,9 +354,22 @@ header .container {
 
 .exhibit h4 {
   width:100%;
+  margin-bottom:8px;
 }
 
 .thesis-img {
   max-width:35%;
   height:auto;
+}
+
+/*footer styling*/
+footer {
+  border-top: 2px solid rgba(186,204,108,.4);
+}
+
+footer .container {
+  max-width:100%;
+  padding-top:16px;
+  padding-left:24px;
+  padding-bottom:32px;
 }
