@@ -14,30 +14,34 @@ Web Programming course*/
 }
 
 .item-1 {
-  width:60%;
+  max-width:60%;
   height:100%;
 }
 
 .item-2, .item-3, .item-4 {
-  width:40%;
+  /*width:40%;*/
 }
 
 .image-container {
   overflow:hidden;
+  height:auto;
 }
 
 .image-container img {
-  width:100%;
+  max-width:100%;
   height:auto;
 }
 
 .video-container {
+  max-width:100%;
   overflow:hidden;
+
 }
 
-.video-continer video {
-  width:100%;
+video {
+  max-width:100%;
   height:auto;
+  display:block;
 }
 
 .color-1 {
@@ -59,13 +63,24 @@ Web Programming course*/
   flex-grow:1;
 }
 
+.col {
+  flex-direction:column;
+}
+
 body {
   margin:0;
+}
+
+video {
+  width:inherit;
+  height:auto;
+  object-fit:cover;
 }
 
 /*header styling*/
 header {
   position:fixed;
+  height:64px;
   width:100%;
   top:0;
   bottom:0;
@@ -95,6 +110,16 @@ header .container {
   width:auto;
 }
 
+.header-title {
+  font-size:1.5rem;
+  bottom:4px;
+  position:relative;
+}
+
+.title-dark {
+  font-weight:bold;
+}
+
 .pc-menu {
   display:inline-block;
   float:right;
@@ -121,7 +146,7 @@ header .container {
 }
 
 .feature .image-container {
-  width:60%;
+  max-width:60%;
   height:auto;
   padding:32px 24px;
 }
@@ -130,7 +155,7 @@ header .container {
   flex-direction:column;
   justify-content:flex-start;
   padding: 10% 8%;
-  width:40%;
+  max-width:40%;
 }
 
 .feature .button {
@@ -144,8 +169,8 @@ header .container {
 
 .news {
   flex-wrap:wrap;
-  flex-direction:column;
-  max-height:37rem;
+  flex-direction:row;
+  /*max-height:37rem;*/
   padding:0.5rem;
 
 }
@@ -165,6 +190,7 @@ header .container {
 
 .news .item-1 {
   height:29.5rem;
+  width:calc(60% - 24px);
   border-right: 2px solid rgba(186,204,108,.4);
   padding-right: 1.5rem;
 }
@@ -174,6 +200,14 @@ header .container {
   padding-top: 0.5rem;
 }
 
+.item-1 .preview-pic, .item-1 .byline {
+  padding-bottom:32px;
+}
+
+.item-1 .copy {
+  margin-bottom:16px;
+}
+
 .copy {
   flex-grow:1;
   width: inherit;
@@ -181,7 +215,7 @@ header .container {
 }
 
 .title, .byline {
-  flex-shrink:1;
+  /*flex-shrink:1;*/
 }
 
 
@@ -191,7 +225,9 @@ header .container {
   margin-left:24px;
   flex-direction:column;
   flex-wrap:wrap;
+
   justify-content:space-around;
+
   padding-bottom:0.5rem;
   border-bottom: 2px solid rgba(186,204,108,.4);
   border-collapse:separate;
@@ -199,12 +235,16 @@ header .container {
 }
 
 .preview-pic {
-  width:35%;
+  max-width:35%;
   height:auto;
   justify-content:center;
 
   padding:0.5rem;
 
+}
+
+.preview-pic img {
+  max-width:100%;
 }
 
 .news-item {
@@ -214,6 +254,14 @@ header .container {
 .item-2 .copy, .item-3 .copy, .item-4 .copy {
   max-width:65%;
 
+}
+
+.news .col {
+  max-width:calc(40% - 24px);
+}
+
+.news-item .col {
+  max-width:60%;
 }
 
 .archive {
@@ -243,7 +291,7 @@ header .container {
 
 .degree-program {
   flex-direction:column;
-  width:25%;
+  max-width:25%;
   margin:32px;
 }
 
@@ -267,15 +315,39 @@ header .container {
   flex-wrap:wrap;
 }
 
+.exhibition .col {
+  max-width:calc(40% - 24px);
+  padding-left:24px;
+
+}
+
 .exhibition h2 {
   width:100%;
+  text-align:center;
+
+}
+
+.exhibit {
+
 }
 
 .exhibition .item-1 {
   height:100%;
+  padding-left:24px;
+  padding-right:24px;
+  max-width:calc(60% - 48px);
+}
+
+
+.exhibit .item-2, .exhibit .item-3 {
+  max-width:100%;
+}
+
+.exhibit h4 {
+  width:100%;
 }
 
 .thesis-img {
-  width:35%;
+  max-width:35%;
   height:auto;
 }
