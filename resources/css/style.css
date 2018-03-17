@@ -295,6 +295,7 @@ header .container {
   }
 }
 
+/*mobile styling for feature section*/
 @media only screen and (max-width: 510px) {
   .feature {
     flex-direction:column;
@@ -356,7 +357,7 @@ header .container {
 
 
 .news .item-1 {
-  height:29.5rem;
+  height:100%;
   width:calc(60% - 24px);
   border-right: 2px solid rgba(186,204,108,.4);
   padding-right: 1.5rem;
