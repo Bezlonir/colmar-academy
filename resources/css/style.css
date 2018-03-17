@@ -475,6 +475,58 @@ header .container {
   font-style:bold;
 }
 
+/*tablet styling for degree fields section*/
+@media only screen and (max-width:1024px) {
+  .degree-program {
+    max-width:calc(50% - 48px);
+    margin:24px;
+
+  }
+
+  .degree-field-list h2 {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    margin-top:32px;
+  }
+
+  .degree-text {
+    margin-left:12px;
+    margin-top:12px;
+    margin-bottom:16px;
+  }
+
+  .degree-text p, .degree-text span {
+    display:none;
+  }
+
+
+}
+
+@media only screen and (max-width:510px) {
+  .degree-pic {
+    display:none;
+  }
+
+  .degree-fields {
+    margin:16px;
+  }
+
+  .degree-program {
+    max-width:100%;
+    width:100%;
+    margin:0;
+    margin-bottom:8px;
+
+  }
+
+  .degree-text {
+    margin-top:16px;
+    margin-left:16px;
+    margin-bottom:24px;
+  }
+}
 
 /*Thesis exhibit section*/
 .exhibition {
@@ -503,6 +555,10 @@ header .container {
   justify-content:center;
 }
 
+.exhibit {
+  height:auto;
+}
+
 .exhibition .item-1 {
   height:100%;
   padding-left:24px;
@@ -525,6 +581,41 @@ header .container {
   height:auto;
 }
 
+.exhibit .col {
+  max-width:calc(65% - 24px);
+}
+
+/*tablet styling for exhibition section*/
+@media only screen and (max-width:1024px) {
+  .exhibition .item-1 {
+    max-width:calc(50% - 48px);
+  }
+
+  .exhibition .col {
+    max-width:calc(50% - 24px);
+  }
+
+}
+
+/*mobile styling for exhibition section*/
+@media only screen and (max-width:510px) {
+  .exhibition .col {
+    display:none;
+  }
+
+  .exhibition .item-1 {
+    max-width:100%;
+    width:100%;
+    padding:0 2px;
+    margin-top:16px;
+    padding-bottom:24px;
+  }
+
+  .exhibit h4, .exhibit span {
+    display:none;
+  }
+}
+
 /*footer styling*/
 footer {
   border-top: 2px solid rgba(186,204,108,.4);
@@ -535,7 +626,7 @@ footer .container {
   padding-top:16px;
   padding-left:24px;
   padding-bottom:32px;
-
+  align-items:baseline;
 }
 
 footer ul {
@@ -547,4 +638,32 @@ footer ul {
 
 footer li {
   margin-right:16px;
+}
+
+/*mobile styling for footer*/
+@media only screen and (max-width:510px) {
+  footer {
+    border-top:none;
+  }
+
+  footer .container {
+    padding-left:16px;
+    padding-bottom:16px;
+  }
+
+  footer .spacer {
+    display:none;
+  }
+
+  footer ul, footer li {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    -webkit-padding-start:10px;
+  }
+
+  footer li {
+    margin-right:0;
+  }
 }
