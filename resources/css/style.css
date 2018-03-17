@@ -332,7 +332,7 @@ header .container {
 }
 
 .copy {
-  flex-grow:1;
+  /*flex-grow:1;*/
   max-width: 100%;
   overflow:wrap;
 }
@@ -344,8 +344,8 @@ header .container {
 
 .news .item-2, .news .item-3, .news .item-4 {
   font-size: 0.8rem;
-  height:7rem;
-
+  /*height:7rem;*/
+  height:auto;
   /*flex-direction:column;*/
   /*flex-wrap:wrap;*/
 
@@ -387,17 +387,53 @@ header .container {
 .news-item .col2 {
   width:60%;
   flex-direction:column;
+  justify-content:space-around;
 }
 
 .archive {
   align-self:center;
   text-align:center;
-  padding-top:0.5rem;
+  padding-top:1.5rem;
 }
 
 /*tablet styling for news section*/
 @media only screen and (max-width:1024px) {
-  
+  .news .item-1 {
+    width:calc(50% - 24px);
+    padding-right:0.75rem;
+  }
+
+  .news .col {
+    width:calc(50% - 48px);
+  }
+
+  .news .item-1 .title {
+    font-size:1rem;
+  }
+}
+
+/*mobile styling for news section*/
+@media only screen and (max-width:510px) {
+    .news {
+      padding-top:16px;
+      padding-left:16px;
+      padding-right:16px;
+    }
+
+    .news .item-1 {
+      display:none;
+    }
+
+    .news-item {
+      margin-bottom:64px;
+    }
+
+    .news .item-4 {
+      margin-bottom:32px;
+    }
+    .news .col {
+      width:100%;
+    }
 }
 
 /*degree fields section*/
