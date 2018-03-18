@@ -40,9 +40,9 @@ Web Programming course*/
 }
 
 /*universal styling*/
-@viewport {
+/*@viewport {
   width:device-width;
-}
+}*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family:'Ubuntu', sans-serif;
@@ -79,6 +79,7 @@ p, span, a {
 .image-container img {
   max-width:100%;
   height:auto;
+  display:block;
 }
 
 .video-container {
@@ -554,6 +555,7 @@ header .container {
 
 }
 
+/*mobile styling for degree fields section*/
 @media only screen and (max-width:510px) {
   .degree-pic {
     display:none;
@@ -582,6 +584,7 @@ header .container {
 .exhibition {
   flex-wrap:wrap;
   padding-bottom:32px;
+  width:100%;
 }
 
 .exhibition .col {
