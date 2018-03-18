@@ -227,6 +227,11 @@ header .container {
     display:none;
   }
 
+  header .container {
+    padding:0;
+    justify-content:space-around;
+  }
+
   header .spacer {
     display:none;
   }
@@ -239,11 +244,12 @@ header .container {
   }
 
   .mobile-menu {
-    display:inline-flex;
-    justify-content:space-between;
+    display:flex;
+    justify-content:space-around;
     float:right;
-    padding-right:1.5rem;
+    /*padding-right:1.5rem;*/
     width:100%;
+    
   }
 
   .mobile-menu ul {
