@@ -343,6 +343,7 @@ header .container {
     -webkit-margin-after:0;
     -webkit-margin-start:0;
     -webkit-margin-end:0;
+    font-weight:normal;
   }
 
   .feature .button {
@@ -595,6 +596,14 @@ header .container {
     margin-left:16px;
     margin-bottom:24px;
   }
+
+  .degree-field-list h4 {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    font-weight:normal;
+  }
 }
 
 /*Thesis exhibit section*/
@@ -684,6 +693,13 @@ header .container {
 
   .exhibit h4, .exhibit span {
     display:none;
+  }
+
+  .exhibition h2 {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
   }
 }
 
