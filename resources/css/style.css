@@ -122,12 +122,6 @@ body {
   margin:0;
 }
 
-video {
-  width:inherit;
-  height:auto;
-  object-fit:cover;
-}
-
 /*header styling*/
 header {
   position:fixed;
@@ -292,9 +286,20 @@ header .container {
 
 .feature-content {
   flex-direction:column;
-  justify-content:flex-start;
+  justify-content:space-between;
+  height:80%;
   padding: 10% 8%;
   max-width:40%;
+}
+
+.feature-content h2, .feature-content h2, .feature-content .button {
+  margin-top:6%;
+  margin-bottom:6%;
+}
+
+.feature h2 {
+  font-weight:bold;
+  font-size:2rem;
 }
 
 .feature .button {
@@ -342,10 +347,7 @@ header .container {
 
   .feature-content h2 {
     padding-bottom:32px;
-    -webkit-margin-before:0;
-    -webkit-margin-after:0;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
+    font-size:1.5rem;
   }
 
   .feature-content h4 {
@@ -366,9 +368,20 @@ header .container {
 .news {
   flex-wrap:wrap;
   flex-direction:row;
-  /*max-height:37rem;*/
   padding:0.5rem;
 
+}
+
+.news h2, .news h4 {
+  font-weight:bold;
+}
+
+.news h2 {
+  font-size:1.5rem;
+}
+
+.news h4 {
+  font-size:1.1rem;
 }
 
 .news-item {
@@ -411,6 +424,10 @@ header .container {
   overflow:wrap;
 }
 
+.item-1 .title {
+  padding-top:6%;
+}
+
 .title, .byline {
   /*flex-shrink:1;*/
 }
@@ -418,13 +435,7 @@ header .container {
 
 .news .item-2, .news .item-3, .news .item-4 {
   font-size: 0.8rem;
-  /*height:7rem;*/
   height:auto;
-  /*flex-direction:column;*/
-  /*flex-wrap:wrap;*/
-
-  /*justify-content:space-around;*/
-
   padding-bottom:0.5rem;
   border-bottom: 2px solid rgba(186,204,108,.4);
   border-collapse:separate;
@@ -512,7 +523,6 @@ header .container {
 }
 
 /*degree fields section*/
-
 .degree-field-list {
     flex-direction:column;
     justify-content:center;
@@ -525,29 +535,33 @@ header .container {
 
 .degree-field-list h2 {
   width:100%;
+  font-size:1.5rem;
   text-align:center;
-
+  font-weight:bold;
   margin-top:32px;
 }
 
 .degree-program {
   flex-direction:column;
   max-width:25%;
-  margin:32px;
+  margin:16px;
 }
 
 .degree-text {
   margin-left:16px;
   margin-top:16px;
   margin-bottom:24px;
+
 }
 
-.degree-text p, .degree-text span {
+.degree-text p {
   margin-top:8px;
+  margin-bottom:8px;
 }
 
-.degree-program h4 {
-  font-style:bold;
+.degree-text h4 {
+  font-weight:bold;
+  font-size:1.1rem;
 }
 
 /*tablet styling for degree fields section*/
@@ -611,13 +625,18 @@ header .container {
     font-weight:normal;
   }
 }
-
+/*----------------------*/
 /*Thesis exhibit section*/
+/*----------------------*/
 .exhibition {
   flex-wrap:wrap;
   padding-bottom:32px;
   width:100%;
   justify-content:center;
+}
+
+.exhibition .item-1 h4 {
+  margin-top:24px;
 }
 
 .exhibition .col {
@@ -629,7 +648,8 @@ header .container {
 .exhibition h2 {
   width:100%;
   text-align:center;
-
+  font-weight:bold;
+  padding: 32px 0;
 }
 
 .ex-text h4, .ex-text span {
@@ -660,11 +680,13 @@ header .container {
 .exhibit h4 {
   width:100%;
   margin-bottom:8px;
+  font-weight:bold;
 }
 
 .thesis-img {
   max-width:35%;
   height:auto;
+  margin:16px;
 }
 
 .exhibit .col {
@@ -702,10 +724,8 @@ header .container {
   }
 
   .exhibition h2 {
-    -webkit-margin-before:0;
-    -webkit-margin-after:0;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
+    padding-top:32px;
+    font-weight:bold;
   }
 
   .exhibition .video-container {
