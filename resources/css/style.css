@@ -701,6 +701,10 @@ header .container {
     -webkit-margin-start:0;
     -webkit-margin-end:0;
   }
+
+  .exhibition .video-container {
+    width:100%;
+  }
 }
 
 /*footer styling*/
@@ -739,7 +743,7 @@ footer li {
   }
 
   footer .spacer {
-    display:none;
+    /*display:none;*/
   }
 
   footer ul, footer li {
@@ -751,6 +755,6 @@ footer li {
   }
 
   footer li {
-    margin-right:0;
+    -webkit-margin-after:1em;
   }
 }
