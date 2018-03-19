@@ -246,7 +246,7 @@ header .container {
   .mobile-menu {
     display:flex;
     justify-content:space-around;
-    float:right;
+    float:none;
     /*padding-right:1.5rem;*/
     width:100%;
 
