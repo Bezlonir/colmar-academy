@@ -493,8 +493,14 @@ header .container {
     .news .item-4 {
       margin-bottom:32px;
     }
+
     .news .col {
       width:100%;
+      margin-left:0;
+    }
+
+    .archive {
+      padding-bottom:16px;
     }
 }
 
