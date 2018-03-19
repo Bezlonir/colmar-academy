@@ -444,15 +444,6 @@ header .container {
   max-width:100%;
 }
 
-/*.news .item-1 {
-  flex-direction:column;
-}*/
-/*
-.item-2 .copy, .item-3 .copy, .item-4 .copy {
-  width:inherit;
-
-}*/
-
 .news .col {
   width:calc(40% - 48px);
   margin-left:24px;
@@ -498,8 +489,12 @@ header .container {
       display:none;
     }
 
+    .news .item-2, .news .item-3, .news .item-4 {
+      padding-bottom:32px;
+    }
+
     .news-item {
-      margin-bottom:64px;
+      margin-bottom:32px;
     }
 
     .news .item-4 {
