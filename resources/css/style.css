@@ -256,7 +256,12 @@ header .container {
     display:flex;
     list-style-type:none;
     width:100%;
-    justify-content:space-between;
+    justify-content:space-around;
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    -webkit-padding-start:0px;
   }
 }
 
