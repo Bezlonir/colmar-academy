@@ -483,11 +483,21 @@ header .container {
       padding:0;
     }
 
-    .title, .copy, .news-link {
+    .copy {
+      line-height:1.1rem;
+    }
+
+    .copy, .news-link {
       padding-top:4%;
     }
-    .col2 {
+
+    .title {
+      padding-top:8%;
+    }
+
+    .news-item .col2 {
       padding-left:16px;
+      width:100%;
     }
 
     .news .item-4 {
