@@ -502,12 +502,12 @@ header .container {
     }
 
     .copy, .news-link {
-      margin-top:4%;
+      margin-top:1.5rem;
       -webkit-margin-before:4%;
     }
 
     .title {
-      margin-top:8%;
+      margin-top:2rem;
       -webkit-margin-before:8%;
     }
 
