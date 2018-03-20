@@ -475,6 +475,19 @@ header .container {
 
     .news-item {
       margin-bottom:32px;
+      flex-direction:column;
+    }
+
+    .preview-pic {
+      max-width:100%;
+      padding:0;
+    }
+
+    .title, .copy, .news-link {
+      padding-top:4%;
+    }
+    .col2 {
+      padding-left:16px;
     }
 
     .news .item-4 {
