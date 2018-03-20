@@ -474,7 +474,7 @@ header .container {
     }
 
     .news .item-2, .news .item-3, .news .item-4 {
-      padding-bottom:32px;
+      margin-bottom:32px;
     }
 
     .news-item {
