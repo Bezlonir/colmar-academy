@@ -407,7 +407,7 @@ header .container {
 
 .news .item-2, .news .item-3, .news .item-4 {
   font-size: 0.8rem;
-  height:auto;
+  /*height:auto;*/
   padding-bottom:0.5rem;
   border-bottom: 2px solid rgba(186,204,108,.4);
   border-collapse:separate;
