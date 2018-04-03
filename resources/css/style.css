@@ -323,16 +323,12 @@ header .container {
   }
 
   .feature-content h2 {
-    padding-bottom:32px;
+    padding-bottom:24px;
     font-size:1.5rem;
   }
 
   .feature-content h4 {
-    padding-bottom: 24px;
-    -webkit-margin-before:0;
-    -webkit-margin-after:0;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
+    padding-bottom: 12px;
     font-weight:normal;
   }
 
