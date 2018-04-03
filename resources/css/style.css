@@ -381,7 +381,7 @@ header .container {
   flex-direction:column;
 }
 
-.item-1 .copy, .item-1 .byline {
+.item-1 .copy {
   padding-top: 0.5rem;
 }
 
@@ -396,6 +396,11 @@ header .container {
 .copy {
   max-width: 100%;
   overflow:wrap;
+}
+
+.byline {
+  font-size: 0.8rem;
+  padding-top:0.8rem;
 }
 
 .item-1 .title {
