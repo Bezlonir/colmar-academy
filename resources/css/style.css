@@ -271,8 +271,8 @@ header .container {
 }
 
 .feature-content h2, .feature-content h2, .feature-content .button {
-  margin-top:6%;
-  margin-bottom:6%;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
 }
 
 .feature h2 {
@@ -372,7 +372,6 @@ header .container {
   background-color:#D7E0CA;
   color:#1C280A;
 }
-
 
 .news .item-1 {
   height:100%;
