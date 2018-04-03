@@ -368,9 +368,7 @@ header .container {
   background-color 140ms ease-in 70ms;
 }
 
-
 .news-item:hover {
-
   background-color:#D7E0CA;
   color:#1C280A;
 }
@@ -402,7 +400,7 @@ header .container {
 }
 
 .item-1 .title {
-  padding-top:6%;
+  padding-top:1.5rem;
 }
 
 .news .item-2, .news .item-3, .news .item-4 {
@@ -474,11 +472,11 @@ header .container {
     }
 
     .news .item-2, .news .item-3, .news .item-4 {
-      margin-bottom:32px;
+      margin-bottom:16px;
     }
 
     .news-item {
-      margin-bottom:32px;
+      margin-bottom:16px;
       flex-direction:column;
     }
 
@@ -502,13 +500,11 @@ header .container {
     }
 
     .copy, .news-link {
-      margin-top:1.5rem;
-      -webkit-margin-before:4%;
+      margin-top:0.8rem;
     }
 
     .title {
-      margin-top:2rem;
-      -webkit-margin-before:8%;
+      margin-top:1rem;
     }
 
     .news-item .col2 {
@@ -541,6 +537,7 @@ header .container {
 .degree-fields {
   flex-wrap:wrap;
   margin:32px 72px;
+  justify-content:center;
 }
 
 .degree-field-list h2 {
